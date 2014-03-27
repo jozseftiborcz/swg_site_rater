@@ -3,12 +3,14 @@ var casper = require('casper').create();
 var exec = require('child_process').execFile;
 var fs = require('fs');
 
+// use this as test drive
 var test_links = [
-    'test_link1.com',
-    'test_link2.com'
+    'google.com',
+    'facebook.com'
 ];
 
-var links = fs.read('links6.txt').split('\n');
+// read links from file
+var links = fs.read('links.txt').split('\n');
 
 casper.start();
 
